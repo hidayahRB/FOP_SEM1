@@ -7,19 +7,18 @@ public class Q4 {
     public static void main(String[] args) {
         // Write a program that rotates 90 degrees clockwise a 3 by 3 matrix.
         Scanner s = new Scanner(System.in);
-        int row = 3;//can make it dynamic for other value of row and column
-        int column = 3;
-        int[][] matrix = new int[row][column];
+        // 3 by 3 matrix
+        int[][] matrix = new int[3][3];
     
-        for (int i = 0; i < row; i++) {
-            for (int j = 0; j < column; j++) {
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
                 System.out.printf("Enter [%d][%d] integer :",i,j);
                 matrix[i][j] = s.nextInt();
             }
         }
         System.out.println("3 by 3 Matrix : ");
-        for (int i = 0; i < row; i++) {
-            for (int j = 0; j < column; j++) {
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
                 System.out.print(matrix[i][j]+" ");
             }System.out.println();
         }
@@ -47,8 +46,8 @@ public class Q4 {
             }
         }
         // display the new matrix
-        for (int i = 0; i < row; i++) {
-            for (int j = 0; j < column; j++) {
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
                 System.out.print(newmatrix[i][j]+" ");
             }System.out.println();
         }
