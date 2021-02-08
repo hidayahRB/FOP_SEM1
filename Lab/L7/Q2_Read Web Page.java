@@ -19,7 +19,7 @@ public class Q2 {
             InputStream stream = cnn.getInputStream();
             Scanner in = new Scanner(stream);
 
-            PrintWriter outputStream = new PrintWriter (new FileOutputStream("F:\\document\\FOP_SEM1\\Files\\index.htm"));
+            PrintWriter outputStream = new PrintWriter (new FileOutputStream("index.htm"));
             while(in.hasNextLine()){
                 String line = in.nextLine();
                 String [] words = line.split(" ");
